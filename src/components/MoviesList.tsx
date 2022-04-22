@@ -1,14 +1,8 @@
 import React from 'react';
+import { MovieType } from '../App';
 
 import Movie from './Movie';
 import classes from './MoviesList.module.css';
-
-type MovieType = {
-  id: number
-  title: string
-  releaseDate: string
-  openingText: string
-}
 
 const MovieList = (props: { movies: MovieType[]; }) => {
   return (
